@@ -1,0 +1,20 @@
+{
+  "name": "ex-02-k6",
+  "version": "1.0.0",
+  "description": "Atividade de Teste de Carga (k6), Métricas (Prometheus/Grafana) e Tracing (Jaeger)",
+  "main": "mock-api.js",
+  "scripts": {
+    "start-mock": "node mock-api.js",
+    "start-metrics": "node metrics-simulator.js",
+    "start-trace": "node trace-simulator.js"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.55.0",
+    "@opentelemetry/resources": "^1.28.0",
+    "@opentelemetry/sdk-trace-base": "^1.28.0",
+    "@opentelemetry/sdk-trace-node": "^1.28.0",
+    "express": "^4.21.1",
+    "prom-client": "^15.1.3"
+  }
+}
